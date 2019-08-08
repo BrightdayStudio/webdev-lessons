@@ -192,3 +192,23 @@ section {
   width: 48%;
     display: inline-block;
 }
+
+
+
+
+
+
+.sub main > div{
+  min-width:48%;
+  display:inline-block;
+}
+
+.sub .profiles div {
+  width:48%;
+  display:inline-block;
+}
+
+
+.events .current .text {
+  float:left;
+}
