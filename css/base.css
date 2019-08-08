@@ -28,7 +28,7 @@ header {
 /* nav
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav {background-color: rgba(0,0,0,0.2);}
-nav div {	width: 100%;
+nav  {	width: 100%;
 	margin: auto;
 	max-width: 1080px;padding: 0.5em 3em;}
 nav ul li {display:inline;}
@@ -94,7 +94,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 1em 0 15px;
+    /* margin: 1em 0 15px; */
+    margin: 0px 0 15px;
     padding: 0;
     font-weight: bold;
     line-height: 1.7;
@@ -107,7 +108,7 @@ h6 {
 
 h1 {
     font-size: 2.5em;
-    margin: .67em 0;
+    /* margin: .67em 0; */
     border-bottom: 1px solid #ccc;}
 
 h2 {
@@ -166,6 +167,7 @@ main section {
   clear:both;
   margin-bottom:3em;
   display:block;
+  overflow: hidden;
 }
 main section > div{
   width:50%;
@@ -176,4 +178,17 @@ main section > img {max-width:300px; float:right;}
 
 section {
 
+}
+
+.social div{
+  display:inline;
+}
+
+.social  img[alt="placeholder"] {max-width:300px; float:right; }
+
+.othersections section {background-color:#F5F5F5; overflow: hidden;     margin-top: 1em;}
+
+.othersections section div {
+  width: 48%;
+    display: inline-block;
 }
