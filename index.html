@@ -3,92 +3,169 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Base Frame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/normalise.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
 
-<body class="home">
-    <header>
-      <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-          <li><a href="events.htm">Whats On</a></li>
-          <li><a href="projects.htm">Projects</a></li>
-          <li><a href="learning.htm">Learning</a></li>
-          <li><a href="get-involved.htm">Get Involved</a></li>
-          <li><a href="partners.htm">Partners</a></li>
-          <li><a href="about.htm">About us</a></li>
-          <li><a href="contact.htm">Contact</a></li>
-          <li><a href="donate.htm">Donate</a></li>
-        </ul>
-      </nav>
 
+<body id="home">
+    <header>
+
+        <div class="topbar">
+            <nav class="container">
+              <ul>
+                  <li class="state-change">
+                    <a href="#">&#9776;</a>
+                  </li>
+                  <li class="active">
+                      <a href="/">Home</a>
+                  </li>
+                  <li>
+                      <a href="events.htm">What's On</a>
+
+                  </li>
+                  <li>
+                      <a href="projects.htm">Projects</a>
+
+                  </li>
+                  <li>
+                      <a href="learning.htm">Learning</a>
+                  </li>
+
+                  <li>
+                      <a href="get-involved.htm">Get Involved</a>
+                  </li>
+
+                  <li>
+                      <a href="partners.htm">Partners</a>
+                  </li>
+
+                  <li>
+                      <a href="about.htm">About us</a>
+                  </li>
+
+                  <li>
+                      <a href="contact.htm">Contact</a>
+                  </li>
+                  <li>
+                      <a href="donate.htm">Donate</a>
+                  </li>
+              </ul>
+            </nav>
+        </div>
         <div class="container">
-          <img src="imgs/logo.png" alt="logo"/>
+            <div class="logo"><img src="imgs/logo.png" />
         </div>
     </header>
 
-    <main class="container">
 
-      <section>
-        <div>
-          <h2>title</h2>
-          <p>Some text</p>
-        </div>
-        <img src="imgs/460x300.jpg" alt="placeholder">
-      </section>
 
-      <section>
-        <div>
-          <h2>title</h2>
-          <p>Some text</p>
-        </div>
-        <img src="imgs/460x300.jpg" alt="placeholder">
-      </section>
+    <main>
+  <div class="container">
+            <article>
+                <h2>Community creativity in Worthing and Adur</h2>
+                <p>Creative waves is a not-for-profit Community Interest Company (CIC). We exist to inspire people to make,
+create and experience the health benefits of art and design though workshop participation and exhibitions/shows.</p>
+  <p><a href="about.htm">Find out more about us</a></p>
+</article>
 
-      <section>
-        <div>
-          <h2>title</h2>
-          <p>Some text</p>
+            <section class="card">
+                <div class=" flex colx2">
+                    <div class="txt">
+                        <h3>What's On</h3>
+                        <p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.</p>
+                        <p><a href="#" class="btn">button</a></p>
+                    </div>
+
+                    <div class="side">
+                        <img src="imgs/460x300.jpg" alt="placeholder">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class=" flex colx2">
+                    <div class="txt">
+                        <h3>Projects</h3>
+                        <p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.</p>
+                        <p><a href="#" class="btn">button</a></p>
+                    </div>
+
+                    <div class="side">
+                        <img src="imgs/460x300.jpg" alt="placeholder">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="card">
+                <div class=" flex colx2">
+                    <div class="txt">
+                        <h3>Get Involved</h3>
+                        <p>This is dummy text. It is intended to be read but have no meaning. As a simulation of actual copy, using ordinary words with normal letter frequencies, it cannot deceive eye or brain.</p>
+                        <p><a href="#" class="btn">button</a></p>
+                    </div>
+
+                    <div class="side">
+                        <img src="imgs/460x300.jpg" alt="placeholder">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section>
+                <div>
+                  <h3>Subscribe to our newsletter</h3>
+                    <form class="stacked">
+                        <label>Name
+                        <input type="text" value="" placeholder="name"/>
+                        </label>
+                        <label>email
+                        <input type="email" value="" placeholder="email"/>
+                        </label>
+                        <div>
+                            <div id="response">Response</div>
+                            <input type="submit" value="submit" class="priority btn" />
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+
+            <section class="social card">
+                <div class=" flex colx2">
+                  <div>
+                    <h3>Find us on social media</h3>
+                    <div class="icons">
+                      <img src="imgs/icon-fb.png" alt="facebook">
+                      <img src="imgs/icon-insta.png" alt="Instagram">
+                      <img src="imgs/icon-twit.png" alt="Twitter">
+                    </div>
+                  </div>
+
+                    <div class="side">
+                        <img src="imgs/460x300.jpg" alt="placeholder">
+                    </div>
+                </div>
+            </section>
+
+
+
+
         </div>
-        <img src="imgs/460x300.jpg" alt="placeholder">
-      </section>
     </main>
 
-    <div class="othersections">
-      <section class="container">
-        <div>
-          <h2>Signup to our newsletter</h2>
-          <p>We'll email you about new events and things happening.</p>
-          <form>
-            <input type="text" placeholder="email"/>
-            <input type="submit" value="Subscribe">
-          </form>
-        </div>
-      </section>
 
-      <section class="social container">
-        <div>
-          <h2>Find us on social media</h2>
-          <div class="icons">
-            <img src="imgs/icon-fb.png" alt="facebook">
-            <img src="imgs/icon-insta.png" alt="Instagram">
-            <img src="imgs/icon-twit.png" alt="Twitter">
-          </div>
+    <footer>
+        <div class="container">
+            <small>Creative Waves - Community Arts in Worthing and Adur - Copyright © 2019</small>
         </div>
-        <div>
-          <img src="imgs/460x300.jpg" alt="placeholder">
-        </div>
-      </section>
-    </div>
-
-
-    <footer class="container">
-      <p>Copyright My Name</p>
     </footer>
 
 </body>
-
 </html>
