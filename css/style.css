@@ -1,68 +1,48 @@
-.topbar .container {
-      padding: 1em 3em;
+body {
+  /* background: #e5e8d3 ; */
+  background-image:url('../imgs/background.gif');
+  background-repeat: repeat;
+  color:#3b3c36;
 }
 
 
-/* div,
-section,
-article
-nav,
-div {
-      border: black 1px solid;
-} */
+header {
+  /* background-color:#fa494b; */
+  background-image:url('../imgs/header.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-main p,
-main blockquote,
-main ul,
-main ol,
-main dl,
-main table,
-main pre,
-main code,
-main section{
-  margin: 15px 0;
-    overflow: auto;
+nav {
+  font-weight: bold;
 }
-main article {
-  margin:0 0 3em 0;
-  overflow: auto;
+
+a {
+  color:#113b3a;
 }
+
 
 /* text */
 
-
-
-
-
-h1{
+h1, h2{
     font-size: 3rem;
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.04em;
-}
-h2{
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1;
+    font-family: 'Marley', sans-serif;
 }
 
 
 h3{
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 3rem;
+    font-family: 'Marley', sans-serif;
 }
 
 h4{
-    font-size: 1.3rem;
-    font-weight: 900;
-    line-height: 1;
+    font-size: 3rem;
+    font-family: 'Marley', sans-serif;
 }
 
 h5, h6{
     font-size: 1.1rem;
-    font-weight: 900;
-    line-height: 1;
 }
 
 
@@ -209,7 +189,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    display: block;
+    display: inline-block;
     /*height: 38px;*/
     padding: 0 1em;
     color: #fff;
@@ -392,8 +372,9 @@ hr {
 
 
 
-.card {background:#eee;padding:2em;}
-.card *:first-child {margin-top:0;}
+.card {}
+.card > *:first-child {margin-top:0;}
+.side img {width:100%; display: block;}
 
 blockquote {
     border-left: 4px solid #DDD;
@@ -412,8 +393,7 @@ blockquote {
 
 
 
-.side {background-color:#fff;}
-.side img {width:100%; display: block;}
+
 
 
 .profiles {

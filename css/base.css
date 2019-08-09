@@ -1,7 +1,8 @@
 body {
     color: #333;
 	background-color:#fff;
-    font-size:18px;
+    font-size:16px;
+    font-family:  "Arial", sans-serif;
 }
 
 .fillscreen {
@@ -16,7 +17,6 @@ body {
 
 header {
     min-height:30vh;
-    background:#eee;
 }
 
 .container {
@@ -27,6 +27,26 @@ header {
 	box-sizing: border-box;
 }
 
+.topbar .container {
+      padding: 1em 3em;
+}
+
+main p,
+main blockquote,
+main ul,
+main ol,
+main dl,
+main table,
+main pre,
+main code,
+main section{
+  margin: 15px 0;
+    overflow: auto;
+}
+main article {
+  margin:0 0 3em 0;
+  overflow: auto;
+}
 
 
 /* nav
@@ -38,39 +58,6 @@ nav a { padding:.3em;}
 
 
 
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {list-style: disc outside;}
-ol {list-style: decimal inside;}
-
-ol, ul {
-    list-style: none outside; display:inline; margin: 0; padding: 0;
-}
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-    font-size: 90%;
-}
-dd {
-  margin-left: 0;
-}
-
-
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-a { color:#4183c4; text-decoration:none; }
-main p a {text-decoration:underline;}
-
-a:hover {color:#0099cc;}
-a:focus,
-a:active {
-  text-decoration: underline;
-}
-
 
 
 
@@ -79,34 +66,15 @@ a:active {
 
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(/assetsfonts/roboto/Roboto-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style:normal;
+    font-family: 'Marley';
+    src: url('fonts/Marley-Regular.eot'); /* IE9 Compat Modes */
+    src:  url('fonts/Marley-Regular.woff') format("woff"),
+          url('fonts/Marley-Regular.ttf') format("truetype"),
+          url('fonts/Marley-Regular.otf') format("opentype");
 }
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(/assetsfonts/roboto/Roboto-bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style:normal;
-}
 
-@font-face {
-    font-family: 'Roboto';
-    src: url(/assetsfonts/roboto/Roboto-black.ttf) format('truetype');
-    font-weight: 900;
-    font-style:normal;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(/assetsfonts/roboto/Roboto-light.ttf) format('truetype');
-    font-weight: 300;
-    font-style:normal;
-}
-
-body {    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;}
+/* body {    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;} */
 
 p {
     line-height: 1.5;
@@ -129,8 +97,8 @@ h6 {
     font-family: sans-serif;
     margin: 0em 0 1em;
     padding: 0;
-    font-weight: bold;
-    line-height: 1.7;
+    font-weight: normal;
+    line-height: 1;
     cursor: text;
     position: relative;
     text-transform: capitalize;
@@ -177,6 +145,41 @@ h5, h6 {
 }
 
 
+
+
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {list-style: disc outside;}
+ol {list-style: decimal inside;}
+
+ol, ul {
+    list-style: none outside; display:inline; margin: 0; padding: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    font-size: 90%;
+}
+dd {
+  margin-left: 0;
+}
+
+
+
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a { color:#4183c4; text-decoration:none; }
+main p a {text-decoration:underline;}
+
+a:hover {color:#0099cc;}
+a:focus,
+a:active {
+  text-decoration: underline;
+}
 
 
 
