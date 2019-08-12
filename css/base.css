@@ -31,7 +31,6 @@ header {
       padding: 1em 3em;
 }
 
-main p,
 main blockquote,
 main ul,
 main ol,
@@ -39,14 +38,15 @@ main dl,
 main table,
 main pre,
 main code,
-main section{
+main section,
+main article{
   margin: 15px 0;
     overflow: auto;
 }
-main article {
+/* main article {
   margin:0 0 3em 0;
   overflow: auto;
-}
+} */
 
 
 /* nav
@@ -101,14 +101,13 @@ h6 {
     line-height: 1;
     cursor: text;
     position: relative;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 
 
 h1 {
     font-size: 2.5em;
-    margin: .67em 0;
   }
 
 h2 {
@@ -172,13 +171,32 @@ dd {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-a { color:#4183c4; text-decoration:none; }
+a {
+  color:#4183c4;
+  text-decoration:none;
+  cursor: pointer;
+}
 main p a {text-decoration:underline;}
 
-a:hover {color:#0099cc;}
+a:hover {
+  color:#0099cc;
+  cursor:pointer;
+}
 a:focus,
 a:active {
   text-decoration: underline;
+}
+
+main p{margin-block-end: 1em;}
+
+/* Form
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+input:disabled {opacity: 0.3; cursor: not-allowed;}
+input[type="password"] {
+	-webkit-text-security: none !important;
 }
 
 
@@ -199,3 +217,15 @@ a:active {
 /* Larger than phablet */
 /*@media (min-width: 550px) {
 */
+
+
+
+
+
+hr {
+    margin:10rem 0;
+    display: block;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    height:0;
+}
