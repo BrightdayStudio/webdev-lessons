@@ -1,21 +1,16 @@
 body {
-    color: #333;
+	color: #333;
 	background-color:#fff;
-    font-size:16px;
-    font-family:  "Arial", sans-serif;
+	font-size:16px;
+	font-family: "Arial", sans-serif;
 }
-
 .fillscreen {
-    height:100vh;
-    width:auto;
+	height:100vh;
+	width:auto;
 }
-
-
-
 header {
-    min-height:20vh;
+	min-height:20vh;
 }
-
 .container {
 	width: 100%;
 	margin: auto;
@@ -23,224 +18,176 @@ header {
 	padding: 3em;
 	box-sizing: border-box;
 }
-
 .topbar .container {
-      padding: 1em 3em;
+	padding: 1em 3em;
 }
-
 @media (max-width: 800px) {
-  .container, .topbar .container  {
-    max-width: 100%;
-    padding: 1em;
-  }
+	.container, .topbar .container {
+		max-width: 100%;
+		padding: 1em;
+	}
 }
-
-
-main ul,
-main ol,
-main dl,
-main section,
-blockquote,
-table,
-pre,
-code,
-article{
-  margin: 15px 0;
-  overflow: auto;
+main ul,main ol,main dl,main section,blockquote,table,pre,code,article{
+	margin: 15px 0;
+	overflow: auto;
 }
 /* main article {
-  margin:0 0 3em 0;
-  overflow: auto;
-} */
-
-
-/* nav
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-nav ul li {display:inline;}
-nav a { padding:.3em;}
-@media (max-width: 800px) {
-  nav ul li {display:block;}
+	margin:0 0 3em 0;
+	overflow: auto;
 }
-
-
-
-
-
-
-
-/* Typography
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
+*/
+/* nav–––––––––––––––––––––––––––––––––––––––––––––––––– */
+nav ul li {
+	display:inline;
+}
+nav a {
+	padding:.3em;
+}
+@media (max-width: 800px) {
+	nav ul li {
+		display:block;
+	}
+}
+/* Typography–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
-    font-family: 'Marley';
-    src: url('fonts/Marley-Regular.eot'); /* IE9 Compat Modes */
-    src:  url('fonts/Marley-Regular.woff') format("woff"),
-          url('fonts/Marley-Regular.ttf') format("truetype"),
-          url('fonts/Marley-Regular.otf') format("opentype");
+	font-family: 'Marley';
+	src: url('fonts/Marley-Regular.eot');
+	/* IE9 Compat Modes */
+	src: url('fonts/Marley-Regular.woff') format("woff"),url('fonts/Marley-Regular.ttf') format("truetype"),url('fonts/Marley-Regular.otf') format("opentype");
 }
-
-/* body {    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;} */
-
-p {line-height: 1.5;}
-
-strong, b {}
-
-em {font-style: normal;}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: sans-serif;
-    margin: 0em 0 1em;
-    padding: 0;
-    font-weight: normal;
-    line-height: 1;
-    cursor: text;
-    position: relative;
-    /* text-transform: capitalize; */
+/* body {
+	font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
 }
-
-
+*/
+p {
+	line-height: 1.5;
+}
+strong, b {
+}
+em {
+	font-style: normal;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: sans-serif;
+	margin: 0em 0 1em;
+	padding: 0;
+	font-weight: normal;
+	line-height: 1;
+	cursor: text;
+	position: relative;
+	/* text-transform: capitalize;
+	*/
+}
 h1 {
-    font-size: 3rem;
-  }
-
+	font-size: 3rem;
+}
 h2 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
-
 h3 {
-      font-size: 2.5rem;
+	font-size: 2.5rem;
 }
-
 h4 {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
-
 h5, h6 {
-  font-size: 1.1rem;
+	font-size: 1.1rem;
 }
-
-
 @media (max-width: 800px) {
-    h1,
-    h2, h3 {font-size: 2em;}
-    h4, h5, h6 {font-size: 1.3em;}
+	h1,h2, h3 {
+		font-size: 2em;
+	}
+	h4, h5, h6 {
+		font-size: 1.3em;
+	}
 }
-
-
-
-
-
-/* Lists
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {list-style: disc outside;}
-ol {list-style: decimal inside;}
-
+/* Lists–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+	list-style: disc outside;
+}
+ol {
+	list-style: decimal inside;
+}
 ol, ul {
-    list-style: none outside; display:inline; margin: 0; padding: 0;
+	list-style: none outside;
+	display:inline;
+	margin: 0;
+	padding: 0;
 }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-    font-size: 90%;
+ul ul,ul ol,ol ol,ol ul {
+	font-size: 90%;
 }
 dd {
-  margin-left: 0;
+	margin-left: 0;
 }
-
-
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* Links–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color:#4183c4;
-  text-decoration:none;
-  cursor: pointer;
+	color:#4183c4;
+	text-decoration:none;
+	cursor: pointer;
 }
-main p a {text-decoration:underline;}
-
+main p a {
+	text-decoration:underline;
+}
 a:hover {
-  color:#0099cc;
-  cursor:pointer;
+	color:#0099cc;
+	cursor:pointer;
 }
-a:focus,
-a:active {
-  text-decoration: underline;
+a:focus,a:active {
+	text-decoration: underline;
 }
-
-
-
-/* Form
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-
-input:disabled {opacity: 0.3; cursor: not-allowed;}
+/* Form–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input:disabled {
+	opacity: 0.3;
+	cursor: not-allowed;
+}
 input[type="password"] {
 	-webkit-text-security: none !important;
 }
-
-
-
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.mobile {display: none;}
-.desktop {display:block;}
-@media (max-width: 800px) {
-	.mobile {display: block;}
-  .desktop {display:none;}
+/* Misc–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.mobile {
+	display: none;
 }
-
-
-
-
-
-
-
+.desktop {
+	display:block;
+}
+@media (max-width: 800px) {
+	.mobile {
+		display: block;
+	}
+	.desktop {
+		display:none;
+	}
+}
 /* Larger than phablet */
 /*@media (min-width: 550px) {
-*/
-
-blockquote {
-  border-left: 4px solid #ca3c3c;
-  padding: 0 15px;
-  color: #ca3c3c;
-  margin: 2em 0;
-}
-
-
-
-hr {
-    margin:10rem 0;
-    display: block;
-    border:none;
-    border-bottom: 1px solid #ccc;
-    height:0;
-}
-
-
-main p{margin-bottom: 1em;}
-article ul {
-    list-style: disc;
-    list-style-position: ouside;
-
-  }
-  article ul li{
-    margin-left: 1em;
-  }
-
-article ul li:last-child {
-    margin-bottom: 1em;
-  }
-
-iframe {width:100%;}
+	*/
+	blockquote {
+		border-left: 4px solid #ca3c3c;
+		padding: 0 15px;
+		color: #ca3c3c;
+		margin: 2em 0;
+	}
+	hr {
+		margin:10rem 0;
+		display: block;
+		border:none;
+		border-bottom: 1px solid #ccc;
+		height:0;
+	}
+	main p{
+		margin-bottom: 1em;
+	}
+	article ul {
+		list-style: disc;
+		list-style-position: ouside;
+	}
+	article ul li{
+		margin-left: 1em;
+	}
+	article ul li:last-child {
+		margin-bottom: 1em;
+	}
+	iframe {
+		width:100%;
+	}
