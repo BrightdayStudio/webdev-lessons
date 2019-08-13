@@ -8,92 +8,140 @@
     <link rel="stylesheet" type="text/css" href="css/normalise.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/basic.js"></script>
 </head>
 
 
-<body>
-    <header>
-
-        <div class="topbar">
-            <nav class="container">
-                <ul>
-                    <li class="mobile">
-                      <a href="#">&#9776;</a>
-                    </li>
-                    <li class="active">
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="events.htm">What's On</a>
-
-                    </li>
-                    <li>
-                        <a href="projects.htm">Projects</a>
-
-                    </li>
-                    <li>
-                        <a href="learning.htm">Learning</a>
-                    </li>
-
-                    <li>
-                        <a href="get-involved.htm">Get Involved</a>
-                    </li>
-
-                    <li>
-                        <a href="partners.htm">Partners</a>
-                    </li>
-
-                    <li>
-                        <a href="about.htm">About us</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.htm">Contact</a>
-                    </li>
-                    <li>
-                        <a href="donate.htm">Donate</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+<body class="partners">
+  <header>
+    <div class="topbar">
+      <nav class="container">
+        <button id="trigger" class="mobile">Menu</button>
+        <ul id="topnav">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="events.htm">What's On</a>
+          </li>
+          <li>
+            <a href="projects.htm">Projects</a>
+          </li>
+          <li>
+            <a href="learning.htm">Learning</a>
+          </li>
+          <li>
+            <a href="get-involved.htm">Get Involved</a>
+          </li>
+          <li>
+            <a href="partners.htm">Partners</a>
+          </li>
+          <li>
+            <a href="about.htm">About Us</a>
+          </li>
+          <li>
+            <a href="contact.htm">Contact</a>
+          </li>
+          <li>
+            <a href="donate.htm">Donate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container logo">
+      <img src="imgs/logo-header.png" alt="logo"/>
+    </div>
+  </header>
 
 
     <main >
   <div class="container">
 
-    <h2>our wonderful partners</h2>
-    <p>A massive thank you to all of our partners and who support creativity in the community, and who make Creative Waves possible.</p>
-    <ul>
-      <li>Heritage Lottery Fund</li>
-      <li>Art Council England</li>
-      <li>Worthing Pier</li>
-      <li>A community house project</li>
-      <li>Worthing Homes</li>
-      <li>Here and Now</li>
-    </ul>
+    <h2>Our Wonderful Partners!</h2>
+    <article>
+    <p>A massive thank you to all of our partners and funders and who support creativity in the community, and make Creative Waves possible.</p>
+    <p>If you are interested in partnering with us <a href="contact.html">we'd love to chat.</a></p>
 
-    <p>If you are interested in partnering with us we'd love to chat.</p>
+    <section class="thumbnails">
+      <ul class="thumbs flex colx3">
+      <li><img src="imgs/partners/art-council.png" alt="Art Council England<"></li>
+      <li><img src="imgs/partners/lottery-community-fund.png" alt="Community Lottery Fund<"></li>
+      <li><img src="imgs/partners/community-house.png" alt="A community house project"></li>
+      <li><img src="imgs/partners/here-now.png" alt="Here & Now"></li>
+      <li><img src="imgs/partners/heritage_trust.png" alt="Heritage Lottery Fund"></i>
+      <li><img src="imgs/partners/worthing-homes.png" alt="worthing homes"></li>
+      <li><img src="imgs/partners/worthing-pier.png" alt="worthing pier"></li>
+      <li></li>
+      <li></li>
+      </ul>
+    </section>
+  </article>
+
+
 </div>
+
 
     </main>
 
     <section class="social">
-          <div class="container">
-            <h3>Find us on social media</h3>
-            <div class="icons">
-              <img src="imgs/icon-fb.png" alt="facebook">
-              <img src="imgs/icon-insta.png" alt="Instagram">
-              <img src="imgs/icon-twit.png" alt="Twitter">
-            </div>
+        <div class="txt container">
+          <h3>Find us on social media</h3>
+          <div class="icons">
+            <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb.png" alt="facebook"></a> <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta.png" alt="Instagram"></a> <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit.png" alt="Twitter"></a>
           </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="logo"><img src="imgs/logo.png" /></div>
-            <small>Creative Waves - Community Arts in Worthing and Adur - Copyright © 2019</small>
         </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Creative Waves is a Community Interest Company (not-for-profit) in Worthing West Sussex. Copyright © 2019</p>
+        <p>Inspiring communities through creativity: public art, workshops, murals.</p>
+        <p><a href="mailto:info@creativewaves.co.uk">info@creativewaves.co.uk</a></p>
+      </div>
+      <div class="nav">
+        <div class="container">
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="events.htm">What's On</a>
+            </li>
+            <li>
+              <a href="projects.htm">Projects</a>
+            </li>
+            <li>
+              <a href="learning.htm">Learning</a>
+            </li>
+            <li>
+              <a href="get-involved.htm">Get Involved</a>
+            </li>
+            <li>
+              <a href="partners.htm">Partners</a>
+            </li>
+            <li>
+              <a href="about.htm">About Us</a>
+            </li>
+            <li>
+              <a href="contact.htm">Contact</a>
+            </li>
+            <li>
+              <a href="donate.htm">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="container">
+          <img src="imgs/logo.png" alt="logo">
+          <div class="icons">
+            <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb-fff.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta-fff.png" alt="Instagram"></a>
+            <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit-fff.png" alt="Twitter"></a>
+          </div>
+        </div>
+      </div>
     </footer>
 </body>
 

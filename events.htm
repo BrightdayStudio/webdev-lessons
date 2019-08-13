@@ -8,59 +8,51 @@
     <link rel="stylesheet" type="text/css" href="css/normalise.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/base.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/basic.js"></script>
 </head>
 
 
 <body>
-    <header>
-
-        <div class="topbar">
-            <nav class="container">
-                <ul>
-                    <li class="mobile">
-                      <a href="#">&#9776;</a>
-                    </li>
-                    <li class="active">
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="events.htm">What's On</a>
-
-                    </li>
-                    <li>
-                        <a href="projects.htm">Projects</a>
-
-                    </li>
-                    <li>
-                        <a href="learning.htm">Learning</a>
-                    </li>
-
-                    <li>
-                        <a href="get-involved.htm">Get Involved</a>
-                    </li>
-
-                    <li>
-                        <a href="partners.htm">Partners</a>
-                    </li>
-
-                    <li>
-                        <a href="about.htm">About us</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.htm">Contact</a>
-                    </li>
-                    <li>
-                        <a href="donate.htm">Donate</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container">
-          <img src="imgs/logo-header.png" alt="logo"/>
-        </div>
-    </header>
-
+  <header>
+    <div class="topbar">
+      <nav class="container">
+        <button id="trigger" class="mobile">Menu</button>
+        <ul id="topnav">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="events.htm">What's On</a>
+          </li>
+          <li>
+            <a href="projects.htm">Projects</a>
+          </li>
+          <li>
+            <a href="learning.htm">Learning</a>
+          </li>
+          <li>
+            <a href="get-involved.htm">Get Involved</a>
+          </li>
+          <li>
+            <a href="partners.htm">Partners</a>
+          </li>
+          <li>
+            <a href="about.htm">About Us</a>
+          </li>
+          <li>
+            <a href="contact.htm">Contact</a>
+          </li>
+          <li>
+            <a href="donate.htm">Donate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container logo">
+      <img src="imgs/logo-header.png" alt="logo"/>
+    </div>
+  </header>
 
 
     <main >
@@ -70,11 +62,14 @@
     <div class="events">
       <ul>
         <li class="flex colx2">
-          <div><img src="imgs/events/vintage-day.jpg"></div>
+          <div><img src="imgs/events/vintage-day.jpg">
+          </div>
             <div class="txt">
             <h4>A Vintage Day on the Prom</h4>
-            <p class="when">When: 29th September 2019, 11am - 3pm</p>
-              <p class='where'>Where: East Beach Studios, Worthing</p>
+            <div class="info">
+              <p>When: <br>29th September 2019, 11am - 3pm</p>
+                <p>Where: <br>East Beach Studios, Worthing, West Sussex.</p>
+              </div>
               <div class="desc">
             <p>Discover the rich history of Worthing's Promenade.<p>
 <p>Creative Waves invite you to put on your Sunday best and JOIN US at East Beach Studios for our VINTAGE DAY ON THE PROM. Recreate an outfit from any era, maybe Victorian, Edwardian, 1960s, '70s..... prizes for the best outfits.</p>
@@ -88,8 +83,10 @@
           <div><img src="imgs/events/heritage-walk.jpg"></div>
             <div class="txt">
             <h4>Pop Up on the Prom Heritage walk</h4>
-            <p class="when">When: Tue, 13 August 2019, 10:30 – 12:00</p>
-            <p class='where'>Where: On the Promenade (opposite Heene Road), Worthing. BN11 2QT</p>
+              <div class="info">
+            <p>When: <br>Tue, 13 August 2019, 10:30 – 12:00</p>
+            <p>Where: <br>On the Promenade (opposite Heene Road), Worthing, West Sussex. BN11 2QT</p>
+          </div>
             <div class="desc">
             <p>Continuing our series of lighthearted heritage strolls along the Promenade, for this walk we're looking at the Victorians and their enthusiasm for all things 'seaside holiday'...however, all is not sunshine and roses in Sunny Worthing, as the last typhoid epidemic in Britain is about to ruin the fun, and riots are afoot amidst the goat rides and sea bathing... Come and find out what the problem was and why things got nasty between Warwick House and Greville Place.
 
@@ -103,22 +100,65 @@ There will be singing and silly voices.</p>
 
 
     </main>
+
     <section class="social">
-          <div class="container">
-            <h3>Find us on social media</h3>
-            <div class="icons">
-              <img src="imgs/icon-fb.png" alt="facebook">
-              <img src="imgs/icon-insta.png" alt="Instagram">
-              <img src="imgs/icon-twit.png" alt="Twitter">
-            </div>
+        <div class="txt container">
+          <h3>Find us on social media</h3>
+          <div class="icons">
+            <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb.png" alt="facebook"></a> <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta.png" alt="Instagram"></a> <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit.png" alt="Twitter"></a>
           </div>
+        </div>
     </section>
 
     <footer>
+      <div class="container">
+        <p>Creative Waves is a Community Interest Company (not-for-profit) in Worthing West Sussex. Copyright © 2019</p>
+        <p>Inspiring communities through creativity: public art, workshops, murals.</p>
+        <p><a href="mailto:info@creativewaves.co.uk">info@creativewaves.co.uk</a></p>
+      </div>
+      <div class="nav">
         <div class="container">
-            <div class="logo"><img src="imgs/logo.png" /></div>
-            <small>Creative Waves - Community Arts in Worthing and Adur - Copyright © 2019</small>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="events.htm">What's On</a>
+            </li>
+            <li>
+              <a href="projects.htm">Projects</a>
+            </li>
+            <li>
+              <a href="learning.htm">Learning</a>
+            </li>
+            <li>
+              <a href="get-involved.htm">Get Involved</a>
+            </li>
+            <li>
+              <a href="partners.htm">Partners</a>
+            </li>
+            <li>
+              <a href="about.htm">About Us</a>
+            </li>
+            <li>
+              <a href="contact.htm">Contact</a>
+            </li>
+            <li>
+              <a href="donate.htm">Donate</a>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="logo">
+        <div class="container">
+          <img src="imgs/logo.png" alt="logo">
+          <div class="icons">
+            <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb-fff.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta-fff.png" alt="Instagram"></a>
+            <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit-fff.png" alt="Twitter"></a>
+        </div>
+        </div>
+      </div>
     </footer>
 </body>
 

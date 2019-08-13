@@ -7,15 +7,15 @@
   <link rel="stylesheet" type="text/css" href="css/normalise.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/base.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/basic.js"></script>
 </head>
 <body id="home">
   <header>
     <div class="topbar">
       <nav class="container">
-        <ul>
-          <li class="mobile">
-            <a href="#">☰</a>
-          </li>
+        <button id="trigger" class="mobile">Menu</button>
+        <ul id="topnav">
           <li class="active">
             <a href="/">Home</a>
           </li>
@@ -40,11 +40,14 @@
           <li>
             <a href="contact.htm">Contact</a>
           </li>
-          <li class="btn">
+          <li>
             <a href="donate.htm">Donate</a>
           </li>
         </ul>
       </nav>
+    </div>
+    <div class="container logo">
+      <img src="imgs/logo-header.png" alt="logo"/>
     </div>
   </header>
   <main>
@@ -93,8 +96,23 @@
       </section>
     </div>
   </main>
-  <section class="newsletter">
-    <div class="container">
+
+
+  <section class="social">
+    <div class="container flex colx2">
+      <div class="txt">
+        <h3>Find us<br>
+        on social media</h3>
+        <div class="icons">
+          <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb.png" alt="facebook"></a> <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta.png" alt="Instagram"></a> <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="side desktop"><img src="imgs/social.png" alt="social" ></div>
+    </div>
+  </section>
+
+  <section class="newsletter container">
+    <div class="">
       <h3>Subscribe<br>
       to our newsletter</h3>
       <form class="stacked">
@@ -107,18 +125,7 @@
       </form>
     </div>
   </section>
-  <section class="social">
-    <div class="container flex colx2">
-      <div class="txt">
-        <h3>Find us<br>
-        on social media</h3>
-        <div class="icons">
-          <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb.png" alt="facebook"></a> <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta.png" alt="Instagram"></a> <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit.png" alt="Twitter"></a>
-        </div>
-      </div>
-      <div class="side"><img src="imgs/social.png" alt="social"></div>
-    </div>
-  </section>
+
   <footer>
     <div class="container">
       <p>Creative Waves is a Community Interest Company (not-for-profit) in Worthing West Sussex. Copyright © 2019</p>
@@ -161,7 +168,11 @@
     <div class="logo">
       <div class="container">
         <img src="imgs/logo.png" alt="logo">
-        <div class="icons"><img src="imgs/icons/fb-fff.png" alt="facebook"> <img src="imgs/icons/insta-fff.png" alt="Instagram"> <img src="imgs/icons/twit-fff.png" alt="Twitter"></div>
+        <div class="icons">
+          <a href="https://www.facebook.com/Creative.Waves"><img src="imgs/icons/fb-fff.png" alt="facebook"></a>
+          <a href="https://www.instagram.com/creativewaves"><img src="imgs/icons/insta-fff.png" alt="Instagram"></a>
+          <a href="https://twitter.com/Creative_Waves"><img src="imgs/icons/twit-fff.png" alt="Twitter"></a>
+      </div>
       </div>
     </div>
   </footer>

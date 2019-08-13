@@ -10,13 +10,10 @@ body {
     width:auto;
 }
 
-#home header {
-    height:80vh;
-    width:auto;
-}
+
 
 header {
-    min-height:30vh;
+    min-height:20vh;
 }
 
 .container {
@@ -31,17 +28,25 @@ header {
       padding: 1em 3em;
 }
 
-main blockquote,
+@media (max-width: 800px) {
+  .container, .topbar .container  {
+    max-width: 100%;
+    padding: 1em;
+  }
+}
+
+
 main ul,
 main ol,
 main dl,
-main table,
-main pre,
-main code,
 main section,
-main article{
+blockquote,
+table,
+pre,
+code,
+article{
   margin: 15px 0;
-    overflow: auto;
+  overflow: auto;
 }
 /* main article {
   margin:0 0 3em 0;
@@ -53,7 +58,9 @@ main article{
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav ul li {display:inline;}
 nav a { padding:.3em;}
-
+@media (max-width: 800px) {
+  nav ul li {display:block;}
+}
 
 
 
@@ -73,20 +80,13 @@ nav a { padding:.3em;}
           url('fonts/Marley-Regular.otf') format("opentype");
 }
 
-
 /* body {    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;} */
 
-p {
-    line-height: 1.5;
-}
+p {line-height: 1.5;}
 
+strong, b {}
 
-strong, b {
-}
-
-em {
-    font-style: normal;
-}
+em {font-style: normal;}
 
 h1,
 h2,
@@ -105,42 +105,31 @@ h6 {
 }
 
 
-
 h1 {
-    font-size: 2.5em;
+    font-size: 3rem;
   }
 
 h2 {
-  font-size: 2em;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 1.5em;
+      font-size: 2.5rem;
 }
 
 h4 {
-  font-size: 1.2em;
+    font-size: 1.3rem;
 }
 
 h5, h6 {
-  font-size: 1em;
+  font-size: 1.1rem;
 }
-
-
 
 
 @media (max-width: 800px) {
     h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-	font-size: 1.2em;
-    }
-    h1 {font-size: 3em;}
-    h2 {font-size: 1.5em;}
-    h3, h4, h5, h6 {font-size: 1.2em;}
+    h2, h3 {font-size: 2em;}
+    h4, h5, h6 {font-size: 1.3em;}
 }
 
 
@@ -187,7 +176,7 @@ a:active {
   text-decoration: underline;
 }
 
-main p{margin-block-end: 1em;}
+
 
 /* Form
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -206,9 +195,13 @@ input[type="password"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .mobile {display: none;}
+.desktop {display:block;}
 @media (max-width: 800px) {
 	.mobile {display: block;}
+  .desktop {display:none;}
 }
+
+
 
 
 
@@ -218,7 +211,12 @@ input[type="password"] {
 /*@media (min-width: 550px) {
 */
 
-
+blockquote {
+  border-left: 4px solid #ca3c3c;
+  padding: 0 15px;
+  color: #ca3c3c;
+  margin: 2em 0;
+}
 
 
 
@@ -229,3 +227,20 @@ hr {
     border-bottom: 1px solid #ccc;
     height:0;
 }
+
+
+main p{margin-bottom: 1em;}
+article ul {
+    list-style: disc;
+    list-style-position: ouside;
+
+  }
+  article ul li{
+    margin-left: 1em;
+  }
+
+article ul li:last-child {
+    margin-bottom: 1em;
+  }
+
+iframe {width:100%;}
