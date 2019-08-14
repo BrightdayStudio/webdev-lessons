@@ -4,33 +4,23 @@ body {
 	color:#3b3c36;
 }
 
-header {
-	background-image: url('../imgs/header.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top;
-}
 
 
-#home header .logo {
-		display:none;
-}
-
-body:not(#home) header{
-		background-image:url('../imgs/header-subpage.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: top;
-}
 
 @media (max-width: 800px) {
 	/*mobile*/
+
+	header .container{
+		padding:0;
+	}
+
+	#home header,
 	header {
 		background-image: url('../imgs/header-mob-portrait.jpg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: top;
+		background-position: center;
 	}
 
 	#home header .logo {
@@ -47,6 +37,7 @@ body:not(#home) header{
 
 @media (min-width: 800px) {
 	/*desktop*/
+
 	#home header {
 		height:80vh;
 		width:auto;
@@ -454,6 +445,8 @@ footer .nav .container {
 		float:none;
 		margin-top:2em;
 	}
+	footer .logo { padding:2em;}
+	footer .nav {padding:2em 0;}
 }
 
 

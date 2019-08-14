@@ -22,11 +22,17 @@ header {
 	padding: 1em 3em;
 }
 @media (max-width: 800px) {
-	.container, .topbar .container {
+	header {
+		margin-bottom:2em;
+	}
+	.container,
+	.topbar .container {
 		max-width: 100%;
-		padding: 1em;
+		padding: 2em;
 	}
 }
+
+
 main ul,main ol,main dl,main section,blockquote,table,pre,code,article{
 	margin: 15px 0;
 	overflow: auto;
