@@ -70,7 +70,7 @@ em {
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: sans-serif;
-	margin: 0em 0 1em;
+	margin: 0 0 1em;
 	padding: 0;
 	font-weight: normal;
 	line-height: 1;
@@ -121,12 +121,48 @@ ul ul,ul ol,ol ol,ol ul {
 dd {
 	margin-left: 0;
 }
+
+
+
+main dl {
+	padding: 0;
+}
+main dl dt {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0;
+}
+main dl dd {
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+.list ol {
+	list-style: decimal;
+	list-style-position:outside;
+	margin: 0;
+	padding: 0;
+}
+.list ul {
+	list-style: disc;
+	list-style-position:outside;
+}
+.list ul li, .list ol li {
+	margin-left: 1.3em;
+	padding-left: 0.3em;
+}
+
+
+
 /* Links–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
 	color:#4183c4;
 	text-decoration:none;
 	cursor: pointer;
 }
+:focus {
+outline: 0;
+}
+
 main p a {
 	text-decoration:underline;
 }
