@@ -28,6 +28,7 @@ header {
 		width:80%;
 	}
 }
+
 @media (min-width: 800px) {
 	/*desktop*/
 	#home header {
