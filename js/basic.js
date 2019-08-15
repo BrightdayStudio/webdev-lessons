@@ -12,17 +12,44 @@
 
 
 $( document ).ready( function() {
-  console.log("ready");
+
 
   var $trigger = $("#trigger");
-  var $toggle = $("#topnav");
+  var $toggle = $(".topnav");
   var $nav = $("header nav");
 
   $($trigger).click( function() {
     console.log("toggle");
     $toggle.toggleClass('show');
-    $nav.toggleClass('navbg');
   });
+
+
+$('.text span').hide();
+
+$('.text a').click( function() {
+  $('.text span').show();
+  $('.text a').hide();
+});
+
+
+
+
+
+
+$(".open").on("click", function(){
+  $(".overlay, .modal").addClass("active");
+});
+
+$(".close, .overlay").on("click", function(){
+   $(".overlay, .modal").removeClass("active");
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) {
+    $(".overlay, .modal").removeClass("active");
+  }
+});
+
 
 
 });
