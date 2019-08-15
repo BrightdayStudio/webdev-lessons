@@ -1,6 +1,6 @@
 body {
-	color: #333;
-	background-color:#fff;
+	color: #fff;
+	background-image: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
 	font-size:16px;
 	font-family: "Arial", sans-serif;
 }
