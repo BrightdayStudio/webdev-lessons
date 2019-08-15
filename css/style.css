@@ -37,11 +37,16 @@ body {
 
 @media (min-width: 800px) {
 	/*desktop*/
-
 	#home header {
 		height:80vh;
 		width:auto;
+		background-image: url('../imgs/header.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
 	}
+
 	body:not(#home) header{
 		background-image:url('../imgs/header-subpage.jpg');
 		background-position: center;
