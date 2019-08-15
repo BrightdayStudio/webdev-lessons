@@ -37,23 +37,31 @@ main ul,main ol,main dl,main section,blockquote,table,pre,code,article{
 	margin: 15px 0;
 	overflow: auto;
 }
-/* main article {
-	margin:0 0 3em 0;
-	overflow: auto;
-}
-*/
+
+
 /* nav–––––––––––––––––––––––––––––––––––––––––––––––––– */
 nav ul li {
-	display:inline;
+	display:block;
 }
 nav a {
-	padding:.3em;
+	padding: 0.3em;
+	display:block;
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
 	nav ul li {
 		display:block;
 	}
+} */
+#trigger {display:block;}
+
+#topnav {
+	background-color: #fff;
+	display: inline-block;
+	padding: 1em;
 }
+
+
+
 /* Typography–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @font-face {
 	font-family: 'Marley';
