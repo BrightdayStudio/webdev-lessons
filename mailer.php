@@ -29,9 +29,12 @@
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message:\n$message\n";
 
+        // Build the email headers.
+        //$email_headers = "From: $name <$email>";
+		$email_headers = "From: info@brightdaystudio.co.uk" . "\r\n" . "Reply-to: $name <$email>";
 
         // Send the email.
-        if (mail($recipient, $subject, $email_content)) {
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
 			$response = http_response_code();
             //http_response_code(200); // Set a 200 (okay) response code.
             echo "Thank You! Your message has been sent.";
