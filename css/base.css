@@ -12,7 +12,8 @@ header {
 	min-height:20vh;
 }
 .container {
-	width: 100%;
+	height:100vh;
+	width: 50%;
 	margin: auto;
 	max-width: 1080px;
 	padding: 3em;
@@ -208,7 +209,6 @@ input[type="button"] {
 	text-transform: uppercase;
 	text-decoration: none;
 	white-space: nowrap;
-	border-radius: 1em;
 	cursor: pointer;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -351,4 +351,125 @@ input[type="password"] {
 .popup button {
 	background: rgba(10, 20, 30, .5);
 	color:#fff;
+}
+
+
+
+
+form { }
+input,textarea,select {
+	padding: 10px;
+	width: 100%;
+	background-color: #fff;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	border-radius: 6px;
+}
+input,select {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+input, textarea, select {
+	margin-bottom: 1em;
+	border: none;
+}
+
+form label {
+	display:inline-block;
+}
+form.stacked label{
+	display:block;
+}
+
+.response {
+	padding: 20px;
+	background-color: #eee;
+	color: #333;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	/*display: none;  hide the response to begin handle inline*/
+}
+
+@media (max-width: 800px) {
+	form {
+		margin: 0;
+		padding: 0;
+		width:100%;
+	}
+	form div {
+		padding-top: 0;
+	}
+	label {
+		margin: 20px 0 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+					align-items: center;
+				  justify-content: center;
+}
+.flex > * {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.flex.colx3 > * {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 28%;
+	        flex: 1 1 28%;
+}
+.flex.colx2 > * {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 45%;
+	        flex: 1 1 45%;
+}
+
+@media (max-width: 800px){
+	.flex > *,
+	.flex.colx3 > * {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 32%;
+		        flex: 1 1 32%;
+	}
+	.flex.colx2 {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column nowrap;
+		        flex-flow: column nowrap;
+	}
+}
+@media (max-width: 400px) {
+	.flex{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: column nowrap;
+		        flex-flow: column nowrap;
+	}
+	.flex > *,
+	.flex.colx2 > *,
+	.flex.colx3 > * {
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 auto;
+		        flex: 1 1 auto;
+	}
 }
