@@ -78,6 +78,7 @@ h3{
 h4{
 	font-weight: bold;
 	color:#276679;
+	margin: 1em 0;
 }
 
 
@@ -551,10 +552,11 @@ article.flex.colx2 .side{
 	    -ms-flex: 1 1 25%;
 	        flex: 1 1 25%;
 }
-article.flex.colx2 .side img {
+article .side img {
 	width: 100%;
 	height: auto;
 	margin-bottom: 1em;
+	display:block;
 }
 article .txt {
 	padding-right: 3em;
@@ -621,3 +623,9 @@ article .txt {
 	background-color: #1a4568;
 	height: 100vh;
 }
+
+
+.contactform {overflow: auto;}
+.socialside {background-color: #c7c5b6; padding:2em; border-radius: 2em;}
+article .side.socialside img {width:auto;}
+/* .contactform label {display: inline;} */
