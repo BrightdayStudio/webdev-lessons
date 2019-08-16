@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = "admin";
+$password = "admin";
 $dbname = "myDB";
 $table = "people";
 
@@ -17,7 +17,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO $table (fname, lname, age, email) VALUES ($fname, $lname, ,$age, $email)";
+$sql = "INSERT INTO $table (fname, lname, age, email) VALUES ('$fname', '$lname', '$age', '$email')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
