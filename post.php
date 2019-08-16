@@ -3,7 +3,12 @@ $servername = "localhost";
 $username = "username";
 $password = "password";
 $dbname = "myDB";
-$table = "people"
+$table = "people";
+
+$fname = $_POST["fname"];
+$lname = $_POST["lname"];
+$age = $_POST["age"];
+$email = $_POST["email"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,7 +17,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO $table (fname, lname, age, email) VALUES ('John', 'Doe', ,'28', 'john@example.com')";
+$sql = "INSERT INTO $table (fname, lname, age, email) VALUES ($fname, $lname, ,$age, $email)";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
