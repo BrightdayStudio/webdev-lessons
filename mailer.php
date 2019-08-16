@@ -7,7 +7,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["name"]));
-		$name = str_replace(array("\r","\n"),array(" "," "),$name);
+		    $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
@@ -20,8 +20,7 @@
         }
 
         // Set the recipient email address.
-        //$recipient = "brightdaystudio@gmail.com";
-		$recipient = "info@brightdaystudio.co.uk";
+		    $recipient = "info@brightdaystudio.co.uk";
         $subject = "New contact from $name";
 
         // Build the email content.
@@ -31,11 +30,11 @@
 
         // Build the email headers.
         //$email_headers = "From: $name <$email>";
-		$email_headers = "From: info@brightdaystudio.co.uk" . "\r\n" . "Reply-to: $name <$email>";
+		   $email_headers = "From: $name <$email>" . "\r\n" . "Reply-to: $name <$email>";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
-			$response = http_response_code();
+			      $response = http_response_code();
             //http_response_code(200); // Set a 200 (okay) response code.
             echo "Thank You! Your message has been sent.";
 			//echo "Thank You! Your message has been sent.", (string)$response;
