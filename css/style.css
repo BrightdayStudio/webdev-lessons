@@ -40,7 +40,7 @@ body {
 	#home header {
 		height:80vh;
 		width:auto;
-		background-image: url('../imgs/header.png');
+		background-image: url('../imgs/header-hp.png');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -59,6 +59,29 @@ body {
 	}
 }
 
+@media (min-width: 1600px) {
+	/*desktop*/
+	#home header {
+		height:80vh;
+		width:auto;
+		background-image: url('../imgs/header-hp-large.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+
+	body:not(#home) header{
+		background-image:url('../imgs/header-subpage-large.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+	#home header .logo {
+		display:none;
+	}
+}
 
 
 
