@@ -10,9 +10,9 @@ body {
     width:auto;
 }
 
-header {
+header,footer {
     min-height:50vh;
-    background:var(--color1);
+    background:#ccc;
 }
 
 .container {
@@ -22,6 +22,8 @@ header {
 	padding: 3em;
 	box-sizing: border-box;
 }
+
+.logo {padding-top:3em;}
 
 
 
