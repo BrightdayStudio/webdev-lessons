@@ -3,13 +3,13 @@
 }
 
 
-div,
+/* div,
 section,
 article
 nav,
 div {
       border: black 1px solid;
-}
+} */
 
 main p,
 main blockquote,
@@ -209,7 +209,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    display: block;
+    display: inline-block;
     /*height: 38px;*/
     padding: 0 1em;
     color: #fff;
@@ -418,4 +418,12 @@ blockquote {
 
 .profiles {
   background-color:#eee;
+}
+
+
+
+
+
+.social, .newsletter {
+  margin-top:5em;
 }
