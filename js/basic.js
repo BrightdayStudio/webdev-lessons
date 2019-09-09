@@ -52,4 +52,41 @@ $(document).keyup(function(e) {
 
 
 
+
+
+$(".tab-list").on("click", ".tab", function(e) {
+	e.preventDefault();
+
+  $(".tab").removeClass("active");
+	$(".tab-content").removeClass("show");
+	$(this).addClass("active");
+	$($(this).attr('href')).addClass("show");
+});
+
+
+
+
+$(".accordion").on("click", ".accordion-header", function() {
+ $(this).next().slideToggle();
+});
+
+
+
+
+
+$(".slides > div").slice(0).hide();
+setInterval(function() {
+	$('.slides > div:first-child')
+		.fadeOut(1000)
+		.next()
+		.fadeIn(1000)
+		.end()
+		.appendTo('.slides');
+}, 3000);
+
+
+
+
+
+
 });

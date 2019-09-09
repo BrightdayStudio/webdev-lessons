@@ -173,9 +173,17 @@ main dl dd {
 
 /* Links–––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-	color:#4183c4;
+
 	text-decoration:none;
 	cursor: pointer;
+}
+
+a:hover {
+	color:#eade15;
+	cursor:pointer;
+}
+a:focus,a:active {
+	text-decoration: underline;
 }
 :focus {
 outline: 0;
@@ -183,13 +191,6 @@ outline: 0;
 
 main p a {
 	text-decoration:underline;
-}
-a:hover {
-	color:#0099cc;
-	cursor:pointer;
-}
-a:focus,a:active {
-	text-decoration: underline;
 }
 
 
@@ -351,4 +352,81 @@ input[type="password"] {
 .popup button {
 	background: rgba(10, 20, 30, .5);
 	color:#fff;
+}
+
+
+
+
+
+
+
+.tab-content {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.tab-content {
+	background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+	padding: 1.5rem;
+	color: #4a5666;
+}
+
+
+
+.tab {
+	border: 1px solid transparent;
+	border-radius: 0.5em 0.5em 0 0 ;
+	display: inline-block;
+	text-decoration: none;
+	padding: .5rem 1rem;
+	color: rgba(255, 255, 255, .6);
+	font-weight: 700;
+	background: rgba(10, 20, 30, .2);
+}
+
+.tab.active {
+	background: rgba(255,255,255,.1);
+	border: 1px solid rgba(255, 255, 255, .6);
+}
+
+
+
+
+
+.accordion {
+	background: white;
+	color: #2a313a;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+
+.accordion-header {
+	border-bottom: 1px solid #DDE0E7;
+	cursor: pointer;
+	padding:1.5rem;
+}
+.accordion-header:hover {
+	background: #F6F7F9;
+}
+
+.accordion-content {
+	border-bottom: 1px solid #DDE0E7;
+	display: none;
+	padding:1.5rem;
+}
+
+
+
+
+.slides{
+	position: relative;
+	height: 300px;
+}
+
+.slides > div {
+	position: absolute;
 }
