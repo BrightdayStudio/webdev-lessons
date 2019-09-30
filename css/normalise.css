@@ -503,3 +503,7 @@ template {
 }
 
 
+
+
+ul {list-style: disc outside;}
+ol {list-style: decimal outside;}

@@ -14,6 +14,9 @@ header,footer {
     min-height:50vh;
     background:#ccc;
 }
+footer {
+    margin-top: 7em;
+}
 
 .container {
 	width: 100%;
@@ -38,10 +41,9 @@ nav a { padding:.3em;}
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {list-style: disc outside;}
-ol {list-style: decimal inside;}
 
-ol, ul {
+
+ul {
     list-style: none outside; display:inline; margin: 0; padding: 0;
 }
 ul ul,

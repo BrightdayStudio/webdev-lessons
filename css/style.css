@@ -1,12 +1,10 @@
 
 
 nav {
-	color:#fff;
 	letter-spacing: 0.5px;
 }
 
 nav a{
-	color:inherit;
 }
 nav a:hover {
 	color:#113b3a;
@@ -218,35 +216,41 @@ form.stacked label{
 
 .thumbnails {
 	list-style: none;
-	width: calc(100% + 2em);
-	-webkit-transform: translateX(-2em);
-	    -ms-transform: translateX(-2em);
-	        transform: translateX(-2em);
+
 }
-.thumbs a {
-	cursor:pointer;
-	color:inherit;
-	display:block;
-}
-.thumbs img {
-	width:100%;
-	display: block;
-}
-.thumbs em {
-	display: block;
-	font-weight: bold;
-	font-size: 1.3em;
-}
-.thumbs > * {
+
+.thumbnails > * {
 	padding: 0;
 	margin: 1em;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
+		background-color: #eee;
 }
+
+.thumbnails p{
+	margin:0;
+	padding:1em;
+}
+.thumbnails a {
+	cursor:pointer;
+	color:inherit;
+	display:block;
+
+}
+.thumbnails img {
+	width:100%;
+	display: block;
+}
+.thumbnails em {
+	display: block;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
 @media (max-width: 800px) {
-	.thumbs > div {
+	.thumbnails > div {
 		margin: 10px 0 10px 0;
 	}
 	.thumbnails {
@@ -258,10 +262,30 @@ form.stacked label{
 }
 
 
+.events li {border-bottom: 1px solid #333;}
+.events em {
+	display:block;
+	font-weight: bold;
+}
 
+.basicpage article{
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 60%;
+		        flex: 1 1 60%;
+}
 
+.basicpage aside {
+		-webkit-box-flex: 1;
+				-ms-flex: 1 1 10%;
+						flex: 1 1 10%;
+		padding-left: 2em;
+}
 
+.basicpage img {width:100%; height:auto;}
 
 .show {
 	display:block;
 }
+
+
+hr {padding:2em 0; border: 0; border-bottom: 1px solid #333;}
