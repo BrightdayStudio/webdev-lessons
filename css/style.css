@@ -162,7 +162,7 @@ form.stacked label{
 
 #response {
     padding: 20px;
-	background-color:#ccc;
+	background-color:#0099cc;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
@@ -283,7 +283,7 @@ form.stacked label{
 
 .basicpage img {width:100%; height:auto;}
 
-.subscribe {background-color: #333;}
+.subscribe {background-color: #ccc; padding:2em;}
 
 .show {
 	display:block;
