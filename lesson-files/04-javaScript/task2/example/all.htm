@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>jQuery</title>
+  <link rel="stylesheet" href="css/normalise.css">
+  <link rel="stylesheet" href="css/base.css">
+  <script type="text/javascript" src="js/vendors/jquery.min.js"></script>
+  <script type="text/javascript" src="js/all.js"></script>
+</head>
+
+<body>
+
+  <nav class="container">
+    <h1>Dropdown</h1>
+    <p>A dropdown is a menu that toggles when you click on it. It's usually indicated by a downward facing arrow.</p><br>
+    <button id="trigger">Menu</button>
+    <ul class="topnav">
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="events.htm">What's On</a>
+      </li>
+      <li>
+        <a href="projects.htm">Projects</a>
+      </li>
+      <li>
+        <a href="learning.htm">Learning</a>
+      </li>
+      <li>
+        <a href="get-involved.htm">Get Involved</a>
+      </li>
+      <li>
+        <a href="partners.htm">Partners</a>
+      </li>
+      <li>
+        <a href="about.htm">About Us</a>
+      </li>
+      <li>
+        <a href="contact.htm">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <main class="container">
+    <h1>Read more link</h1>
+    <p class="text">Until this battle station is fully operational we are vulnerable. The Rebel Alliance is too well equipped. They're more dangerous than you realize. Dangerous to your starfleet, <a>read more ...</a> <span>Commander, not to this
+        battle station! The Rebellion will continue to gain a support in the Imperial Senate as long as.... The Imperial Senate will no longer be of any concern to us. I've just received word that the Emperor has dissolved the council permanently.
+        The last remnants of the Old Republic have been swept away. That's impossible! How will the Emperor maintain control without the bureaucracy? The regional governors now have direct control over territories. Fear will keep the local systems in
+        line. Fear of this battle station.</span></p>
+  </main>
+
+  <section class="container popup">
+    <div class="overlay"></div>
+    <h2>Popup Modal</h2>
+    <div class="modal">
+      <p>Let him go! Stay on the leader! Hurry, Luke, they're coming in much faster this time. I can't hold them! Artoo, try and increase the power! Hurry up, Luke! Wait! I'm on the leader. Hang on, Artoo! Use the Force, Luke. Let go, Luke. The Force
+        is strong with this one! Luke, trust me. His computer's off. Luke, you switched off your targeting computer. What's wrong? Nothing. I'm all right. I've lost Artoo! You may fire when ready. I have you now</p><br>
+      <button class="close">Close</button>
+    </div>
+    <button class="open">Open</button>
+  </section>
+
+  <section class="container tabs">
+    <h2>Tabs</h2>
+    <nav class="tab-list">
+      <a class="tab active" href="#one">One</a>
+      <a class="tab" href="#two">Two</a>
+      <a class="tab" href="#three">Three</a>
+    </nav>
+
+    <div id="one" class="tab-content show">Tabs are a form of navigation that switches the content inside a panel.  Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+      explicabo. </div>
+    <div id="two" class="tab-content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    </div>
+    <div id="three" class="tab-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+      sit amet, consectetur.</div>
+
+
+  </section>
+
+
+
+  <section class="container popup">
+    <h2>Accordion</h2>
+    <div class="accordion">
+      <div class="title">An accordion is a list of headers...</div>
+      <div class="content">that reveal more content when clicked. This example each section stays open when you click, but some versions only have one content panel open at a time.</div>
+
+      <div class="title">Nemo enim ipsam</div>
+      <div class="content">Et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </div>
+
+      <div class="title">Sed ut perspiciatis</div>
+      <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+        amet, consectetur.</div>
+    </div>
+  </section>
+
+  <section class="container slideshow">
+    <h2>Image slideshow</h2>
+    <div class="slides">
+	<div><img src="imgs/01.jpg"></div>
+	<div><img src="imgs/02.jpg"></div>
+	<div><img src="imgs/03.jpg"></div>
+</div>
+  </section>
+
+
+</body>
+
+</html>

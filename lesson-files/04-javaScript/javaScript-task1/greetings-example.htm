@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Test</title>
+  </head>
+  <body>
+    <h1>JS Beginners</h1>
+    <h2 id="text">Hello</h2>
+
+    <script>
+
+    var now = new Date();
+    var hour = now.getHours();
+
+    function showMessage() {
+         // console.log(hour); // test the code
+
+      if (hour < 12){
+         document.getElementById('text').innerHTML = "Good Morning";
+       } else if (hour > 12 && hour < 18) {
+         document.getElementById('text').innerHTML = "Good Afternoon";
+       } else if (hour > 18){
+         document.getElementById('text').innerHTML = "Good Evening";
+       } else {
+         document.getElementById('text').innerHTML = "Good Day";
+       };
+    };
+
+    showMessage();
+
+
+</script>
+
+  </body>
+</html>

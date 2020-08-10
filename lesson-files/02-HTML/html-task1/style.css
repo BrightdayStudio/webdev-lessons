@@ -1,0 +1,29 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+
+
+body {
+	color: #333;
+	background-color:#dadada;
+	font-size:16px;
+	font-family: "Arial", sans-serif;
+	padding:3rem;
+}
+
+p {
+	line-height: 1.5;
+}
+
+
+h1 {
+    font-size: 2em;
+		margin:0;
+	}

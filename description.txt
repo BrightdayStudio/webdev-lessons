@@ -1,0 +1,27 @@
+Interested in learning how to build a website? Or hoping to develop a professional career as a front-end web developer or web designer? Or maybe you have interest in Interactive Media/Computing/Computer Science/Web Development as a hobby or interest?
+
+This is a practical hand-coding course which teaches you how to build a basic static website. Ideal for confident computer users who wish to improve their skills. 
+
+We cover the following topics:
+
+Editors and software
+Setup
+Servers
+Hosting and Domains
+HTML
+CSS and Style
+Web Graphics/Images
+JavaScript interactivity (client side programming including jQuery)
+PHP (server side programming for data capture and forms)
+Databases (mySQL)
+Responsive techniques (mobile friendly)
+Static Vs Dynamic sites
+
+
+Step-by-step you will follow along and build pre-designed templates using all the techniques necessary to create a great modern website. This class project aims to help you develop all the necessary skills to later create your own website. 
+
+
+This course is an introduction and suitable for beginners. No prior knowledge is required, although learners must feel confident using a computer (PC or Mac).
+
+To save work created please bring a USB flash drive or external hard drive, or sign up to Google Drive/Dropbox. 
+

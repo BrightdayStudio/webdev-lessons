@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Data Form</title>
+	<link rel="stylesheet" type="text/css" href="css/normalise.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	
+</head>
+
+<body>
+	
+	
+		<main class="content">
+		<section>
+			<h2>Save data using php</h2>
+
+		  <div class="contactform">
+			  <form  method="post" action="php/data.php" class="stacked">
+				  <div class="field">
+					  <label for="name">Name:
+						  <input type="text" id="name" name="name" placeholder="Your Name" required></label>
+					  <label for="email">Email:
+						  <input type="email" id="email" name="email" placeholder="Your Email" required></label>
+				  </div>
+
+
+				  <div class="field">
+					  <label for="message">Message:</label>
+					  <textarea id="message" name="message" placeholder="Save a message..." rows="4" required></textarea>
+				  </div>
+
+				  <div class="field">
+					  <button type="submit">Save</button>
+				  </div>
+			  </form>
+			</div>
+			
+		 </section>
+		</main>
+	
+</body>
+</html>
