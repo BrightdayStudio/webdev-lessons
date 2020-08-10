@@ -1,0 +1,42 @@
+/* $ratio-16-9: 56.25%;
+$cols: 4; */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .wrapper {
+  width: calc(100% / #{$cols});
+  margin: 2px;
+  border: 1px solid red;
+} */
+
+.wrapper {
+  width: calc(100% / 4);
+  margin: 2px;
+  border: 1px solid red;
+}
+
+
+.padded-container {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: calc(56.25% / 4)};
+  /* padding-bottom: #{$ratio-16-9 / $cols}; */
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.centered {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  margin: auto;
+}
